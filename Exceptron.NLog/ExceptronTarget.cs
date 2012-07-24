@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using Exceptron.Client;
+using Exceptron.Client.Configuration;
 using NLog;
 using NLog.Common;
 using NLog.Layouts;

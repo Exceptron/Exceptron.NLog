@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Exceptron.Nlog</id>
+    <version>0.0.0.0</version>
+    <!--Version will be updated during build-->
+    <title>Exceptron.Nlog</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/Exceptron/Exceptron.NLog</projectUrl>
+    <iconUrl>https://www.exceptron.com/logos/Exceptron128.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <language>en-US</language>
+    <copyright>Copyright © 2012</copyright>
+    <tags>Exception Logging Analytics Reporting Nlog Exceptron</tags>
+    <dependencies>
+      <dependency id="Nlog" version="[2.0.0.2000,3.0.0.0)" />
+      <dependency id="Exceptron.Client"/>
+    </dependencies>
+  </metadata>
+</package>
