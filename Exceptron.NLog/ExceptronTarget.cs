@@ -4,6 +4,7 @@ using Exceptron.Client;
 using Exceptron.Client.Configuration;
 using NLog;
 using NLog.Common;
+using NLog.Config;
 using NLog.Layouts;
 using NLog.Targets;
 
@@ -11,7 +12,7 @@ namespace Exceptron.NLog
 {
     public class ExceptronTarget : Target
     {
-        private ExceptionClient _exceptionClient;
+        internal IExceptionClient _exceptionClient;
 
         protected override void InitializeTarget()
         {
@@ -28,6 +29,7 @@ namespace Exceptron.NLog
         /// <summary>
         /// Exceptron API Key
         /// </summary>
+        [RequiredParameter]
         public string ApiKey { get; set; }
 
         /// <summary>
@@ -48,8 +50,12 @@ namespace Exceptron.NLog
                     Exception = logEvent.Exception,
                     Component = logEvent.LoggerName,
                     Message = logEvent.FormattedMessage,
-                    UserId = UserId.Render(logEvent)
                 };
+
+                if (UserId != null)
+                {
+                    exceptionData.UserId = UserId.Render(logEvent);
+                }
 
                 if (logEvent.Level <= LogLevel.Info)
                 {
@@ -73,6 +79,7 @@ namespace Exceptron.NLog
             catch (Exception e)
             {
                 InternalLogger.Warn("Unable to report exception. {0}", e);
+                throw;
             }
         }
     }

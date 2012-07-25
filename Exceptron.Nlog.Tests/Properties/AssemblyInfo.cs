@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Exceptron.Nlog")]
-[assembly: AssemblyDescription("Nlog target for exceptron")]
+[assembly: AssemblyTitle("Exceptron.Nlog.Tests")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Exceptron Solutions Inc.")]
-[assembly: AssemblyProduct("Exceptron.Nlog")]
-[assembly: AssemblyCopyright("Copyright © 2012")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Exceptron.Nlog.Tests")]
+[assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("17c97430-ff75-4b54-9ff5-1703e07b1d45")]
+[assembly: Guid("b5245109-4a10-448a-be24-473bd7170255")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -34,5 +34,3 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
-[assembly: InternalsVisibleTo("Exceptron.Nlog.Tests")]

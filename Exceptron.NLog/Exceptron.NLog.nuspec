@@ -13,10 +13,10 @@
     <description>$description$</description>
     <language>en-US</language>
     <copyright>Copyright © 2012</copyright>
-    <tags>Exception Logging Analytics Reporting Nlog Exceptron</tags>
+    <tags>Exception Nlog Logging Analytics Exceptron Reporting Target</tags>
     <dependencies>
       <dependency id="Nlog" version="[2.0.0.2000,3.0.0.0)" />
-      <dependency id="Exceptron.Client"/>
+      <dependency id="Exceptron.Client" version="[0.1.0.36-alpha,1.0.0.0)"/>
     </dependencies>
   </metadata>
 </package>
