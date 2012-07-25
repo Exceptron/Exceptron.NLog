@@ -22,7 +22,7 @@ namespace Exceptron.NLog
                     ThrowExceptions = LogManager.ThrowExceptions
                 };
 
-            _exceptionClient = new ExceptionClient();
+            _exceptionClient = new ExceptionClient(config);
         }
 
         /// <summary>
