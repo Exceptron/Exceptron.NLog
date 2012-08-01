@@ -12,7 +12,7 @@ namespace Exceptron.NLog
 {
     public class ExceptronTarget : Target
     {
-        internal IExceptionClient _exceptionClient;
+        internal IExceptronClient _exceptronClient;
 
         protected override void InitializeTarget()
         {
@@ -23,7 +23,7 @@ namespace Exceptron.NLog
                     ThrowExceptions = LogManager.ThrowExceptions
                 };
 
-            _exceptionClient = new ExceptionClient(config);
+            _exceptronClient = new ExceptronClient(config);
         }
 
         /// <summary>
@@ -74,7 +74,7 @@ namespace Exceptron.NLog
                     exceptionData.Severity = ExceptionSeverity.Fatal;
                 }
 
-                _exceptionClient.SubmitException(exceptionData);
+                _exceptronClient.SubmitException(exceptionData);
             }
             catch (Exception e)
             {

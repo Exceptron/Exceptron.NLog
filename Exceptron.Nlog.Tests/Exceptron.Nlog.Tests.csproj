@@ -33,9 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Exceptron.Client, Version=0.1.0.36, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Exceptron.Client, Version=0.1.0.45, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Exceptron.NLog\packages\Exceptron.Client.0.1.0.36-alpha\lib\net20\Exceptron.Client.dll</HintPath>
+      <HintPath>..\Exceptron.NLog\packages\Exceptron.Client.0.1.0.45-alpha\lib\net20\Exceptron.Client.dll</HintPath>
     </Reference>
     <Reference Include="FluentAssertions">
       <HintPath>..\Exceptron.NLog\packages\FluentAssertions.1.7.1.1\Lib\net40\FluentAssertions.dll</HintPath>

@@ -15,7 +15,7 @@ namespace Exceptron.Nlog.Tests
     {
         private Logger _testLogger = LogManager.GetCurrentClassLogger();
         private ExceptronTarget _etTarget = new ExceptronTarget();
-        private Mock<IExceptionClient> _exceptronClient = new Mock<IExceptionClient>();
+        private Mock<IExceptronClient> _exceptronClient = new Mock<IExceptronClient>();
 
         [SetUp]
         public void Setup()
@@ -32,7 +32,7 @@ namespace Exceptron.Nlog.Tests
 
             LogManager.ReconfigExistingLoggers();
 
-            _etTarget._exceptionClient = _exceptronClient.Object;
+            _etTarget._exceptronClient = _exceptronClient.Object;
         }
 
         [Test]
