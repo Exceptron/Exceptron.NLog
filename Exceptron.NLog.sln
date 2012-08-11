@@ -1,16 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptron.NLog", "Exceptron.NLog.csproj", "{B795A99C-678D-4A04-9C8A-E0C59C540C6E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{08485462-CA2A-4D88-9549-29972B4E4351}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{61AF7FE1-6D5E-47D2-9D16-BD1AE6CA3A4A}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 		.nuget\nuget.exe = .nuget\nuget.exe
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptron.Nlog.Tests", "..\Exceptron.Nlog.Tests\Exceptron.Nlog.Tests.csproj", "{9CD54EC4-EB41-4D53-A798-B345C08C06CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptron.NLog", "Exceptron.NLog\Exceptron.NLog.csproj", "{B795A99C-678D-4A04-9C8A-E0C59C540C6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptron.Nlog.Tests", "Exceptron.Nlog.Tests\Exceptron.Nlog.Tests.csproj", "{9CD54EC4-EB41-4D53-A798-B345C08C06CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

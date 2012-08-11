@@ -161,4 +161,5 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
-Exceptron.NLog/packages/
+packages/
+UpgradeLog.htm
