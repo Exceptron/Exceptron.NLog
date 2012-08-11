@@ -33,21 +33,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Exceptron.Client, Version=0.1.0.45, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Exceptron.NLog\packages\Exceptron.Client.0.1.0.45-alpha\lib\net20\Exceptron.Client.dll</HintPath>
+    <Reference Include="Exceptron.Client">
+      <HintPath>..\packages\Exceptron.Client.0.1.0.57-alpha\lib\net20\Exceptron.Client.dll</HintPath>
     </Reference>
     <Reference Include="FluentAssertions">
-      <HintPath>..\Exceptron.NLog\packages\FluentAssertions.1.7.1.1\Lib\net40\FluentAssertions.dll</HintPath>
+      <HintPath>..\packages\FluentAssertions.1.7.1.1\Lib\net40\FluentAssertions.dll</HintPath>
     </Reference>
     <Reference Include="Moq">
-      <HintPath>..\Exceptron.NLog\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
+      <HintPath>..\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
     </Reference>
     <Reference Include="NLog">
-      <HintPath>..\Exceptron.NLog\packages\NLog.2.0.0.2000\lib\net20\NLog.dll</HintPath>
+      <HintPath>..\packages\NLog.2.0.0.2000\lib\net40\NLog.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>..\Exceptron.NLog\packages\NUnit.2.6.0.12054\lib\nunit.framework.dll</HintPath>
+      <HintPath>..\packages\NUnit.2.6.1\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -59,13 +58,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Exceptron.NLog\Exceptron.NLog.csproj">
       <Project>{b795a99c-678d-4a04-9c8a-e0c59c540c6e}</Project>
       <Name>Exceptron.NLog</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />

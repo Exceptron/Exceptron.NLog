@@ -16,7 +16,7 @@
     <tags>Exception Nlog Logging Analytics Exceptron Reporting Target</tags>
     <dependencies>
       <dependency id="Nlog" version="2.0.0.2000" />
-      <dependency id="Exceptron.Client" version="[0.1.0.45-alpha,1.0.0.0)"/>
+      <dependency id="Exceptron.Client" version="[0.1.0.575-alpha,1.0.0.0)"/>
     </dependencies>
   </metadata>
 </package>
