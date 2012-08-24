@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptron.Nlog", "Exceptron.Nlog\Exceptron.Nlog.csproj", "{B795A99C-678D-4A04-9C8A-E0C59C540C6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptron.Nlog.Tests", "Exceptron.Nlog.Tests\Exceptron.Nlog.Tests.csproj", "{9CD54EC4-EB41-4D53-A798-B345C08C06CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B795A99C-678D-4A04-9C8A-E0C59C540C6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B795A99C-678D-4A04-9C8A-E0C59C540C6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B795A99C-678D-4A04-9C8A-E0C59C540C6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B795A99C-678D-4A04-9C8A-E0C59C540C6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD54EC4-EB41-4D53-A798-B345C08C06CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD54EC4-EB41-4D53-A798-B345C08C06CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD54EC4-EB41-4D53-A798-B345C08C06CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD54EC4-EB41-4D53-A798-B345C08C06CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
