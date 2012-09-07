@@ -32,7 +32,7 @@ namespace Exceptron.Nlog.Tests
 
             LogManager.ReconfigExistingLoggers();
 
-            _etTarget._exceptronClient = _exceptronClient.Object;
+            _etTarget.ExceptronClient = _exceptronClient.Object;
         }
 
         [Test]

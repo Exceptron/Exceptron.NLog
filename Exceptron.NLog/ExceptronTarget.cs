@@ -10,9 +10,13 @@ using NLog.Targets;
 
 namespace Exceptron.NLog
 {
+    /// <summary>
+    /// <see cref="NLog"/> target for exceptron. Allows you to automatically report all
+    /// exceptions logged to Nlog/>
+    /// </summary>
     public class ExceptronTarget : Target
     {
-        internal IExceptronClient _exceptronClient;
+        internal IExceptronClient ExceptronClient;
 
         protected override void InitializeTarget()
         {
@@ -23,11 +27,11 @@ namespace Exceptron.NLog
                     ThrowExceptions = LogManager.ThrowExceptions
                 };
 
-            _exceptronClient = new ExceptronClient(config);
+            ExceptronClient = new ExceptronClient(config);
         }
 
         /// <summary>
-        /// Exceptron API Key
+        /// exceptron API Key
         /// </summary>
         [RequiredParameter]
         public string ApiKey { get; set; }
@@ -74,7 +78,7 @@ namespace Exceptron.NLog
                     exceptionData.Severity = ExceptionSeverity.Fatal;
                 }
 
-                _exceptronClient.SubmitException(exceptionData);
+                ExceptronClient.SubmitException(exceptionData);
             }
             catch (Exception e)
             {
