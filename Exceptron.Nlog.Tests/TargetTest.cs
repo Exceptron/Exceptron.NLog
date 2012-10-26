@@ -25,6 +25,7 @@ namespace Exceptron.Nlog.Tests
             _etTarget = new ExceptronTarget
                 {
                     ApiKey = "FAKE",
+                    ApplicationVersion = new Version()
                 };
 
             LogManager.Configuration.AddTarget(Guid.NewGuid().ToString(), _etTarget);
@@ -50,7 +51,21 @@ namespace Exceptron.Nlog.Tests
             LogManager.Configuration = new LoggingConfiguration();
             LogManager.ThrowExceptions = true;
             _etTarget = new ExceptronTarget();
+            _etTarget.ApplicationVersion = new Version();
             _etTarget.ApiKey = apiKey;
+            LogManager.Configuration.AddTarget(Guid.NewGuid().ToString(), _etTarget);
+            LogManager.Configuration.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, _etTarget));
+
+            Assert.Throws<NLogConfigurationException>(LogManager.ReconfigExistingLoggers);
+        }
+
+        public void application_version_should_be_required()
+        {
+            LogManager.Configuration = new LoggingConfiguration();
+            LogManager.ThrowExceptions = true;
+            _etTarget = new ExceptronTarget();
+            _etTarget.ApplicationVersion = null;
+            _etTarget.ApiKey = "FAKE";
             LogManager.Configuration.AddTarget(Guid.NewGuid().ToString(), _etTarget);
             LogManager.Configuration.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, _etTarget));
 

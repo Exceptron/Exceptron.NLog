@@ -16,7 +16,10 @@ namespace Exceptron.NLog
     /// </summary>
     public class ExceptronTarget : Target
     {
-        internal IExceptronClient ExceptronClient;
+        /// <summary>
+        /// <see cref="ExceptronClient"/> instance that Nlog Target uses to report the exceptions.
+        /// </summary>
+        public IExceptronClient ExceptronClient { get; internal set; }
 
         protected override void InitializeTarget()
         {
@@ -27,7 +30,7 @@ namespace Exceptron.NLog
                     ThrowExceptions = LogManager.ThrowExceptions
                 };
 
-            ExceptronClient = new ExceptronClient(config);
+            ExceptronClient = new ExceptronClient(config, ApplicationVersion);
         }
 
         /// <summary>
@@ -35,6 +38,12 @@ namespace Exceptron.NLog
         /// </summary>
         [RequiredParameter]
         public string ApiKey { get; set; }
+
+        /// <summary>
+        /// exceptron API Key
+        /// </summary>
+        [RequiredParameter]
+        public Version ApplicationVersion { get; set; }
 
         /// <summary>
         /// String that identifies the active user
