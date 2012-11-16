@@ -31,7 +31,7 @@ namespace Exceptron.NLog
                     ThrowExceptions = LogManager.ThrowExceptions
                 };
 
-            ExceptronClient = new ExceptronClient(config, ApplicationVersion);
+            ExceptronClient = new ExceptronClient(config, new Version(ApplicationVersion));
         }
 
         /// <summary>
