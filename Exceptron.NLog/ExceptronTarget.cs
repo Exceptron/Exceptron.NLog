@@ -14,6 +14,7 @@ namespace Exceptron.NLog
     /// <see cref="NLog"/> target for exceptron. Allows you to automatically report all
     /// exceptions logged to Nlog/>
     /// </summary>
+    [Target("Exceptron")]
     public class ExceptronTarget : Target
     {
         /// <summary>
