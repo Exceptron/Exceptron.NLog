@@ -44,7 +44,7 @@ namespace Exceptron.NLog
         /// exceptron API Key
         /// </summary>
         [RequiredParameter]
-        public Version ApplicationVersion { get; set; }
+        public string ApplicationVersion { get; set; }
 
         /// <summary>
         /// String that identifies the active user
