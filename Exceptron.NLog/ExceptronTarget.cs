@@ -31,7 +31,7 @@ namespace Exceptron.NLog
                     ThrowExceptions = LogManager.ThrowExceptions
                 };
 
-            ExceptronClient = new ExceptronClient(config, new Version(ApplicationVersion));
+            ExceptronClient = new ExceptronClient(config, new Version(ApplicationVersion.Render(new LogEventInfo())));
         }
 
         /// <summary>
@@ -44,7 +44,7 @@ namespace Exceptron.NLog
         /// exceptron API Key
         /// </summary>
         [RequiredParameter]
-        public string ApplicationVersion { get; set; }
+        public Layout ApplicationVersion { get; set; }
 
         /// <summary>
         /// String that identifies the active user

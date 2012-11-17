@@ -59,6 +59,7 @@ namespace Exceptron.Nlog.Tests
             Assert.Throws<NLogConfigurationException>(LogManager.ReconfigExistingLoggers);
         }
 
+        [Test]
         public void application_version_should_be_required()
         {
             LogManager.Configuration = new LoggingConfiguration();
